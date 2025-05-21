@@ -1,7 +1,6 @@
-import { useState, useContext } from 'react'
 import './App.css'
 import { Todos } from "../components/Todos.jsx"
-import { TodosProvider, useTodos } from '../contextProviders/todosProvider.jsx'
+import { TodosProvider } from '../contextProviders/todosProvider.jsx'
 import AddingTodo from '../components/AddingTodo.jsx'
 
 // The error is cause you need to have the
