@@ -4,7 +4,7 @@ export function Todo({ todo }) {
     const { toggleTodo, deleteTodo } = useTodos()
 
     return (
-        <div>
+        <div className="todo">
             <input id={todo.id}
                 type="checkbox"
                 checked={todo.checked}
