@@ -7,7 +7,7 @@ import {
 } from "react";
 import { v4 as uuid } from "uuid";
 
-type Todo = {
+export type Todo = {
   id: string;
   title: string;
   checked: boolean;
