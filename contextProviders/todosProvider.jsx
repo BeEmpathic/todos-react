@@ -36,11 +36,11 @@ export function TodosProvider({ children }) {
         )
     }
     function deleteTodo(id) {
-
+        setTodos(prevTodos => prevTodos = prevTodos.filter(t => t.id !== id))
     }
 
     return (
-        <TodosContext.Provider value={{ todos, addTodo, toggleTodo }}>
+        <TodosContext.Provider value={{ todos, addTodo, toggleTodo, deleteTodo }}>
             {children}
         </TodosContext.Provider>
     )

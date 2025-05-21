@@ -1,7 +1,7 @@
 import { useTodos } from "../contextProviders/todosProvider"
 
 export function Todo({ todo }) {
-    const { toggleTodo } = useTodos()
+    const { toggleTodo, deleteTodo } = useTodos()
 
     return (
         <div>
@@ -13,6 +13,7 @@ export function Todo({ todo }) {
             <label htmlFor={todo.id}>
                 {todo.title}
             </label>
+            <button onClick={() => deleteTodo(todo.id)}>❌</button>
         </div>
     )
 }
